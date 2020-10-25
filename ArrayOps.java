@@ -60,4 +60,16 @@ public class ArrayOps {
     return result;
   }
 
+  public static boolean isRowMagic(int[][] matrix) {
+    int comparer = sum(matrix[0]);
+
+    for (int i = 0; i < matrix.length; i++) {
+      if (sum(matrix[1]) != comparer) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+
 }
