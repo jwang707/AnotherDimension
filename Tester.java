@@ -9,6 +9,8 @@ public class Tester{
     System.out.println(ArrayOps.sum(blank));
     System.out.println(ArrayOps.largest(myNums));
     System.out.println(Arrays.toString(ArrayOps.sumRows(twodee)).replace("], ","],\n"));
+    System.out.println(Arrays.toString(ArrayOps.largestInRows(twodee)).replace("], ","],\n"));
+
   }
 
 }
