@@ -83,4 +83,15 @@ public class ArrayOps {
     return true;
   }
 
+  public static boolean isLocationMagic(int[][] matrix, int row, int col) {
+    int[] comparer = sumCols(matrix);
+    int colsum = comparer[col];
+    int rowsum = sum(matrix[row]);
+
+    return (rowsum == colsum); // lonesome == wholesome
+
+  }
+
+
+
 }

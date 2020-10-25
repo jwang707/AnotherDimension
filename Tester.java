@@ -13,6 +13,9 @@ public class Tester{
                                        {5, 4, 6},
                                        {4, 4, 1},
     };
+    int[][] babyhotlinepleasehold = {{2, 2, 2},
+                                     {2, 2, 2},
+                                     {2, 2, 2}};
 
     System.out.println(ArrayOps.sum(myNums));
     System.out.println(ArrayOps.sum(blank));
@@ -25,6 +28,8 @@ public class Tester{
     System.out.println(ArrayOps.isRowMagic(toodee)); //expect true
     System.out.println(ArrayOps.isColMagic(toodee)); //expect false
     System.out.println(ArrayOps.isColMagic(anotheronebitesthedust)); //expect true
+    System.out.println(ArrayOps.isLocationMagic(anotheronebitesthedust, 2, 2)); //expect false
+    System.out.println(ArrayOps.isLocationMagic(babyhotlinepleasehold, 2, 2)); //expect true
   }
 
 }
