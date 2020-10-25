@@ -64,12 +64,23 @@ public class ArrayOps {
     int comparer = sum(matrix[0]);
 
     for (int i = 0; i < matrix.length; i++) {
-      if (sum(matrix[1]) != comparer) {
+      if (sum(matrix[i]) != comparer) {
         return false;
       }
     }
     return true;
   }
 
+  public static boolean isColMagic(int[][] matrix) {
+    int[] comparer = sumCols(matrix);
+    int colsum = comparer[0];
+
+    for (int i = 0; i < comparer.length; i++) {
+      if (colsum != comparer[i]) {
+        return false;
+      }
+    }
+    return true;
+  }
 
 }
